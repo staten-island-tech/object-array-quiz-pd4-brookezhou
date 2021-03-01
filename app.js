@@ -40,3 +40,10 @@ const twoTerms = [
 console.log(twoTerms);
 
 //BONUS write a script to check if LBJ was a 2 term president. IF he was then alert("LBJ served two terms") else alert "LBJ was one and done"
+
+const LBJ = presidents.filter((president) => {
+  if (president.terms >= 2) {
+    return "LBJ served two terms";
+  }
+});
+console.table(LBJ);
